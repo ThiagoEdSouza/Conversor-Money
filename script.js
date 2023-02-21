@@ -1,15 +1,18 @@
 const button = document.getElementById("convert-button") // Cria a variável para o botão conversor
 const select = document.getElementById("currency-select")
 
-const dolar = 5.17
-const euro = 5.48
-const bitcoin = 86688.83
 
-const convertValues = () => { // Cria a função para conversão dos valores
+
+const convertValues = async () => { // Cria a função assíncrona para conversão dos valores
     const inputReais = document.getElementById('input-real').value // Declara a variável para capturar o valor digitado.
     const realValueText = document.getElementById('real-value-text')
     const currencyValueText = document.getElementById('currency-value-text')
 
+    const data = await fetch("https://economia.awesomeapi.com.br/last/USD-BRL,EUR-BRL,BTC-BRL").then( response => response.json()) // Biblioteca para acesso da api de cotação dos valores das moedas.
+
+    const dolar = data.USDBRL.high
+    const euro = data.EURBRL.high
+    const bitcoin = data.BTCBRL.high // Puxando os valores da API.
 
     realValueText.innerHTML = new Intl.NumberFormat('pt-BR', {
         style: 'currency', currency: 'BRL', // Função para formatar a moeda a ser convertida.
