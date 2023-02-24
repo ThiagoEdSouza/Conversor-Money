@@ -2,14 +2,13 @@
 
 
 
-<h1 align="center"> Conversor de Moedas com valor comercial Pré Definido </h1>
+<h1 align="center"> Calculadora Conversora de Dólar, Euro e BitCoin p/ Real. </h1>
 
 <br/>
 <br/>
 
-<h3 align="center">Projeto de conversor de moedas com valor comercial rpé definido e com efeitos de conversão efetuados através do Javascript.</h3>
+<h3 align="center">Calculadora conversora de moedas com valor comercial atribuídos de forma simultânea através de uma Api de Cotação dos valores das moedas e com efeitos de conversão efetuados através do Javascript.</h3>
 <h4 align="center">Baseada originalmente em uma estrutura para versão mobile, o app reúne aplicações de fundamentos desenvolvidos em HTML, CSS e JavaScript.<br>
-App desenvolvido como projeto de pesquisa e aplicação dos fundamentos aprendidos em ambiente de aula.</h4>
 
 <br/>
 
